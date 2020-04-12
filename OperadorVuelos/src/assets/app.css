@@ -1,0 +1,56 @@
+.root {
+	-fx-accent: #03A9F4;
+	-fx-glass-color: #03A9F4;
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #757575;
+    -fx-border-color: #757575;
+}
+.table-view .column-header .label{
+    -fx-alignment:CENTER_LEFT;
+    -fx-text-fill: white; 
+}
+
+.table-row-cell:filled:selected, .table-row-cell:filled > .table-cell:selected {
+    -fx-background: -fx-selection-bar;
+    -fx-table-cell-border-color: derive(-fx-selection-bar, 20%);
+    -fx-text-fill: white; 
+}
+
+/* Colors of JavaFX pie chart slices. */
+.data0.chart-pie { -fx-pie-color: #03A9F4; }
+.data1.chart-pie { -fx-pie-color: #757575; }
+.data2.chart-pie { -fx-pie-color: cornflowerblue; }
+.data3.chart-pie { -fx-pie-color: blue; }
+.data4.chart-pie { -fx-pie-color: cadetblue; }
+.data5.chart-pie { -fx-pie-color: navy; }
+.data6.chart-pie { -fx-pie-color: deepskyblue; }
+.data7.chart-pie { -fx-pie-color: cyan; }
+.data8.chart-pie { -fx-pie-color: steelblue; }
+.data9.chart-pie { -fx-pie-color: teal; }
+.data10.chart-pie { -fx-pie-color: royalblue; }
+.data11.chart-pie { -fx-pie-color: dodgerblue; }
+
+.modal-dialog {
+  -fx-padding: 20;
+  -fx-spacing: 10;
+  -fx-alignment: center;
+  -fx-font-size: 20;
+  -fx-background-color: white;
+  -fx-border-color: linear-gradient(to bottom, derive(-fx-glass-color, 20%), -fx-glass-color);
+  -fx-border-width: 1;
+  -fx-background-insets: 1;
+  -fx-border-insets: 1;
+  -fx-border-radius: 6;
+  -fx-background-radius: 6;
+  -fx-alignment: center;
+}
+.modal-dialog .hbox {
+	-fx-padding: 20;
+}
+
+.searchField {
+    -fx-background-color: transparent;
+}

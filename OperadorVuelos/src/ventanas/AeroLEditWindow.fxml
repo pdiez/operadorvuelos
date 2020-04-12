@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="366.0" prefWidth="364.0" style="-fx-border-color: grey; -fx-border-width: 0.5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FontAwesomeIconView fill="WHITE" glyphName="PLANE" layoutX="1.0" layoutY="203.0" size="200" wrappingWidth="362.0000066757202" />
+      <Rectangle fill="#03a9f4e3" height="8.0" layoutY="3.0" stroke="#1a1919" strokeType="INSIDE" width="364.0" />
+      <Label alignment="CENTER" layoutX="8.0" layoutY="11.0" prefHeight="35.0" prefWidth="351.0" text="Edición de aerolineas">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <VBox layoutX="28.0" layoutY="56.0" prefHeight="283.0" prefWidth="310.0" style="-fx-background-color: rgba(90,90, 90, 0.05);">
+         <children>
+            <Pane layoutX="10.0" layoutY="35.0" prefHeight="29.0" prefWidth="310.0" />
+            <JFXComboBox fx:id="cboAeroLEdit" editable="true" focusColor="#03a9f4" labelFloat="true" prefHeight="25.0" prefWidth="310.0" promptText="Seleccione Aerolinea" />
+            <Pane prefHeight="29.0" prefWidth="310.0" />
+            <JFXTextField fx:id="txtAeroLEdit" focusColor="#03a9f4" labelFloat="true" promptText="Nombre" />
+            <Pane layoutX="10.0" layoutY="35.0" prefHeight="26.0" prefWidth="310.0" />
+            <JFXCheckBox fx:id="chkAeroLEdit" prefHeight="18.0" prefWidth="313.0" selected="true" text="Activa" />
+            <Pane layoutX="10.0" layoutY="142.0" prefHeight="45.0" prefWidth="310.0" />
+            <Label fx:id="poAeroLEditLabel" alignment="CENTER" prefHeight="17.0" prefWidth="309.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton fx:id="poAeroLEditGuardar" prefHeight="25.0" prefWidth="320.0" ripplerFill="#168308" style="-fx-border-color: grey; -fx-border-width: 0.5;" text="Guardar" textFill="#2cba1a">
+               <VBox.margin>
+                  <Insets top="1.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="CHECK" glyphStyle="-fx-fill: #00d000">
+                     <font>
+                        <Font name="FontAwesome Regular" size="12.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="poAeroLEditClose" layoutX="10.0" layoutY="212.0" prefHeight="25.0" prefWidth="320.0" ripplerFill="#bb1919" style="-fx-border-color: grey; -fx-border-width: 0.5;" text="Cancelar" textFill="#bf1515">
+               <VBox.margin>
+                  <Insets top="-1.5" />
+               </VBox.margin>
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="REMOVE" glyphStyle="-fx-fill: #bf1515">
+                     <font>
+                        <Font name="FontAwesome Regular" size="12.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</Pane>
